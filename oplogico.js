@@ -13,3 +13,6 @@ if(idade < 18 || !temCarteira) {
 if(consumiuBebida) {
     console.log("Você não pode dirigir no momento!");
 }
+
+let podeDirigir = idade >=18 ? "Pode" : "Não pode";
+console.log(podeDirigir)
