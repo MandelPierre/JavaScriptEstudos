@@ -5,4 +5,4 @@ let B = 3;
 let divisao = A / B;
 let resto = A % B;
 
-console.log(``)
+console.log(`O quociente da divisão de A e B é ${divisao}, e o resto inteiro é ${resto}`);
