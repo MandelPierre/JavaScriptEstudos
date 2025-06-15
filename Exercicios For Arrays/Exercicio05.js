@@ -1,11 +1,9 @@
-//Crie um programa que calcule a média dos números presentes em um array utilizando um loop for.
-const notas = [9, 8.5, 8, 10];
-let somaDasNotas = 0;
+/**Crie um programa que utilize um laço for para percorrer uma array const numeros = [3, 8, 12, 5, 6, 10, 7,
+2, 9, 14] e exibir no console apenas os números pares contidos nesse array.*/
+const numeros = [3, 8, 12, 5, 6, 10, 7, 2, 9, 14];
 
-notas.forEach(somaNotas);
-
-function somaNotas (nota) {
-    somaDasNotas += nota;    
+for(let i = 0; i < numeros.length; i++){
+    if(numeros[i] % 2 === 0){
+        console.log(`${numeros[i]} é um número par deste array`);
+    }
 }
-const media = somaDasNotas / notas.length;
-console.log(`A média é ${media}`);
