@@ -1,6 +1,6 @@
 //Crie uma função que receba uma array e imprima no console o número do índice e o elemento.
-const num = [5, 4, 3, 2, 1];
+const num = [5, 8, 3, 19, 0];
 
-for(let i = 0; i < num; i++){
-    
+for(let i = 0; i < num.length; i++){
+    console.log(`O elemento do índice ${i} é: ${num[i]}`);
 }
