@@ -9,11 +9,10 @@ function executaOperacaoEmArray(array, callback) {
     });
 }
 
+const numeros = [5, 11, 2, 9, 27, 9, 3];
 
-const numeros = [1, 2, 3, 4, 5];
-
-function dobrar(numero) {
-    return numero * 2;
+function triplicar(numero) {
+    return numero * 3;
 }
 
-executaOperacaoEmArray(numeros, dobrar);
+executaOperacaoEmArray(numeros, triplicar);
