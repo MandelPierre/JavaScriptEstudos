@@ -80,3 +80,19 @@ function functionMult(numMult1, numMult2){
 function functionDivi(numDivi1, numDivi2){
     return numDivi1 - numDivi2;
 }
+
+//Valores
+const numSoma1 = 18
+const numSoma2 = 54
+
+const numSubt1 = 9
+const numSubt2 = 12
+
+const numMult1 = 23
+const numMult2 = 16
+
+const numDivi1 = 10
+const numDivi2 = 8
+
+
+const resultSoma = functionSoma()
