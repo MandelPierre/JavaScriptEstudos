@@ -100,6 +100,7 @@ const resultSubt = functionSubt(numSubt1, numSubt2);
 const resultMult = functionMult(numMult1, numMult2);
 const resultDivi = functionDivi(numDivi1, numDivi2);
 
+console.log("Resultados das funçoes")
 console.log(resultSoma);
 console.log(resultSubt);
 console.log(resultMult);
