@@ -60,14 +60,23 @@ mostrarListaPessoas(resultadoFiltro);
 //Calculadora
 const calculadora = {
     soma: functionSoma,
+    subtracao: functionSubt,
+    multiplicacao: functionMult,
+    divisao: functionDivi,
 }
 
 function functionSoma(numSoma1, numSoma2){
     return numSoma1 + numSoma2;
 }
 
-const num1 = 3;
-const num2 = 5;
+function functionSubt(numSubt1, numSubt2){
+    return numSubt1 - numSubt2;
+}
 
-const resultadoFunction = functionSoma(num1, num2);
-console.log(resultadoFunction);
+function functionMult(numMult1, numMult2){
+    return numMult1 - numMult2;
+}
+
+function functionDivi(numDivi1, numDivi2){
+    return numDivi1 - numDivi2;
+}
