@@ -74,11 +74,11 @@ function functionSubt(numSubt1, numSubt2){
 }
 
 function functionMult(numMult1, numMult2){
-    return numMult1 - numMult2;
+    return numMult1 * numMult2;
 }
 
 function functionDivi(numDivi1, numDivi2){
-    return numDivi1 - numDivi2;
+    return numDivi1 / numDivi2;
 }
 
 //Valores
@@ -100,9 +100,56 @@ const resultSubt = functionSubt(numSubt1, numSubt2);
 const resultMult = functionMult(numMult1, numMult2);
 const resultDivi = functionDivi(numDivi1, numDivi2);
 
-console.log("Resultados das funçoes")
-console.log(resultSoma);
-console.log(resultSubt);
-console.log(resultMult);
-console.log(resultDivi);
+console.log("\n----Resultados das funçoes----")
+console.log(`Resultado da soma: ${resultSoma}`);
+console.log(`Resultado da subtração: ${resultSubt}`);
+console.log(`Resultado da multiplicação: ${resultMult}`);
+console.log(`Resultado da divisão: ${resultDivi}`);
 
+
+
+//Conta Bancaria
+console.log(`\n----Conta Bancaria e Cliente.----`);
+
+const contaBancaria = {
+    titular: "Pierre Mandel",
+    saldo: 1600,
+    depositar: deposito,
+    sacar: saque   
+}
+
+//Função para adicionar um valor a conta
+function deposito(valorDeposito){
+    this.saldo += valorDeposito;
+}
+
+//Função para sacar um valor da conta
+function saque(valorSaque){
+    if (valorSaque > this.saldo) {
+        console.log(`Saque negado. Saldo insuficiente. Saldo atual: R$${this.saldo}`);
+    } else {
+        this.saldo -= valorSaque;
+        console.log(`Saque de R$${valorSaque} realizado com sucesso.`);
+    }
+}
+
+const valorDeposito = contaBancaria.depositar(190);
+const valorParaSacar = contaBancaria.sacar(60);
+
+//Criando cliente com referência à conta
+const cliente = {
+    nome: "Pierre Mandel",
+    conta: contaBancaria
+};
+
+//Função mostrar saldo
+function mostrarSaldo(clienteObj) {
+    console.log(`Cliente: ${clienteObj.nome}, Saldo: R$${clienteObj.conta.saldo}`);
+}
+
+//Realizando operações
+cliente.conta.depositar(190);
+cliente.conta.sacar(60);
+
+//Mostrando saldo atualizado
+mostrarSaldo(cliente);
